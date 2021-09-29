@@ -25,6 +25,18 @@ public class Gamepad1{
 
 
         x_value_left = gamepad1.left_stick_x;
+        x_value_right = gamepad1.right_stick_x;
+        y_value_left = gamepad1.left_stick_y;
+        y_value_right = gamepad1.right_stick_y;
+
+
+        telemetry.addData("value of left x", x_value_left);
+        telemetry.addData("value of left y", y_value_left);
+        telemetry.addData("value of right x", x_value_right);
+        telemetry.addData("value of right y", y_value_right);
+        telemetry.update();
+    }
+
 
     }//end of function gamepadAction
 
